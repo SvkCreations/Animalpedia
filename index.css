@@ -1,0 +1,36 @@
+#main{
+    background-image: url("Images/Body-bg-01.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+}
+#verte{
+    background: #5A3F37; 
+    background: -webkit-linear-gradient(to right, #2C7744, #5A3F37); 
+    background: linear-gradient(to right, #2C7744, #5A3F37); 
+
+}
+#inverte{
+    background: #c2e59c;
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c); 
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+
+}
+#pets{
+    background-image: url('Images/pets-01.png');
+    background-repeat: no-repeat;
+    background-position:right ;
+    background-size: 25%;
+}
+@media only screen and (max-width: 600px) {
+    #main{
+        background-size: 120%;
+    }
+    #main-btn1,#main-btn2{
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    }
+    #pets{
+        background-position:right bottom ;
+        background-size: 60%;
+    }
+  }
