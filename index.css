@@ -1,0 +1,131 @@
+#main{
+color: white;
+
+}
+body,html{
+    overflow-x: hidden;
+}
+#background-video {
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+#verte{
+    background: #5A3F37; 
+    background: -webkit-linear-gradient(to right, #2C7744, #5A3F37); 
+    background: linear-gradient(to right, #2C7744, #5A3F37); 
+
+}
+#main-button1{
+    width: 5vw;
+}
+#inverte{
+    background: #c2e59c;
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c); 
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+
+}
+#pets{
+    background-image: url('Images/pets-01.png');
+    background-repeat: no-repeat;
+    background-position:right ;
+    background-size: 25%;
+}
+#ctg{
+    margin-top:7%
+}
+#main-head{
+    padding-top: 60px;
+}
+@media only screen and (max-width: 1050px) {
+    #ctg{
+        margin-top:8%;
+    }
+    #background-video{
+        height: 50vh;
+    }
+  }
+@media only screen and (max-width: 800px) {
+    #ctg{
+        margin-top:3%;
+    }#background-video{
+        height: 80vw;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    #main{
+        background-size: 120%;
+    }
+    #main-btn1,#main-btn2{
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    }
+    #pets{
+        background-position:right bottom ;
+        background-size: 60%;
+    }
+    #main-head{
+        padding-top: 0;
+    }
+    #main{
+        color: white;
+    }
+    #background-video{
+        height: 100vh;
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    #main{
+        background-size: 120%;
+    }
+    #main-btn1,#main-btn2{
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    }
+    #pets{
+        background-position:right bottom ;
+        background-size: 60%;
+    }
+    #main-head{
+        padding-top: 0;
+    }
+    #main{
+        color: white;
+    }
+    #background-video{
+        height: 130vh;
+    }
+  @media only screen and (max-width: 320px) {
+    #main{
+        background-size: 120%;
+    }
+    #main-btn1,#main-btn2{
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    }
+    #pets{
+        background-position:right bottom ;
+        background-size: 60%;
+    }
+    #main-head{
+        padding-top: 0;
+    }
+    #main{
+        color: white;
+    }
+    #background-video{
+        height: 130vh;
+    }
+    #main-btn1,#main-btn2{
+        width: 23vh;
+    }
+  }
+  @media only screen and (max-width: 280px) {
+    #main-btn2{
+        margin-top: 15px;
+    }
+  }
+  }
