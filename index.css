@@ -120,7 +120,7 @@ body,html{
         height: 130vh;
     }
     #main-btn1,#main-btn2{
-        width: 23vh;
+        width: 21vh;
     }
   }
   @media only screen and (max-width: 280px) {
