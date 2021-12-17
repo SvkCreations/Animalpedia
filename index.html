@@ -108,7 +108,9 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact us</a>
             </li>
-            <button class="btn btn-success mx-lg-3">Log in</button>
+                        <div id="my-signin2" class="mx-lg-5"></div>
+            <img id="image" style="height: 25px; width: 25px;" alt="Image not found"></img>
+            <div id="name"></div>
           </ul>
           <form class="d-flex">
             <input
@@ -120,7 +122,6 @@
             <button class="btn btn-outline-success" type="submit">
               Search
             </button>
-            <div id="my-signin2" class="mx-lg-3"></div>
           </form>
         </div>
       </div>
@@ -292,6 +293,10 @@
     <script>
       function onSuccess(googleUser) {
         console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        document.getElementById('name').innerText = "Signed in: " +
+              googleUser.getBasicProfile().getName();
+              document.getElementById('image').src=googleUser.getBasicProfile().getImageUrl();
+              document.getElementById('my-signin2').style.display="none";
       }
       function onFailure(error) {
         console.log(error);
