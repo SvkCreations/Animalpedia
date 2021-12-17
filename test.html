@@ -1,46 +1,5 @@
 <html>
 <head>
-  <meta name="google-signin-client_id" content="956597175192-jl4iiuqvtitq3pocbv2f56ddco7oadh7.apps.googleusercontent.com">
-</head>
-<body>
-  <div id="my-signin2"></div>
-  <script>
-    function onSuccess(googleUser) {
-      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-    }
-    function onFailure(error) {
-      console.log(error);
-    }
-    function renderButton() {
-      gapi.signin2.render('my-signin2', {
-        'scope': 'profile email',
-        'width': 240,
-        'height': 50,
-        'longtitle': true,
-        'theme': 'dark',
-        'onsuccess': onSuccess,
-        'onfailure': onFailure
-      });
-    }
-  </script>
-
-  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-</body>
-</html>
-You can also specify settings for a custom Google Sign-In button by defining data- attributes to a div element with the class g-signin2. For example:
-
-
-<div class="g-signin2" data-width="300" data-height="200" data-longtitle="true">
-Building a button with a custom graphic
-You can build a Google Sign-In button to fit your site's design. You must follow the branding guidelines and use the appropriate colors and icons in your button. The branding guidelines also provide icon assets that you can use to design your button. You must also ensure that your button is as prominent as other third-party login options.
-
-The following is an example of a Google Sign-In button built with a custom graphic: 
-
-The following HTML, JavaScript, and CSS code produces the button above:
-
-
-<html>
-<head>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
   <script src="https://apis.google.com/js/api:client.js"></script>
   <script>
@@ -49,7 +8,7 @@ The following HTML, JavaScript, and CSS code produces the button above:
     gapi.load('auth2', function(){
       // Retrieve the singleton for the GoogleAuth library and set up the client.
       auth2 = gapi.auth2.init({
-        client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
+        client_id: '956597175192-jl4iiuqvtitq3pocbv2f56ddco7oadh7.apps.googleusercontent.com',
         cookiepolicy: 'single_host_origin',
         // Request scopes in addition to 'profile' and 'email'
         //scope: 'additional_scope'
