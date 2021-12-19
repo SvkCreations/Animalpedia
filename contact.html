@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-signin-client_id" content="956597175192-jl4iiuqvtitq3pocbv2f56ddco7oadh7.apps.googleusercontent.com">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="Images/icon-01.png" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <script async src="https://cse.google.com/cse.js?cx=42d5629412f74541b"></script>
+    <title>Animalpedia | Contact</title>
+  </head>
+  <body id="contact-body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Images/icon-02.png" alt="" width="28" height="24" />
+        </a>
+        <a class="navbar-brand" href="index.html">Animalpedia</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="Animals.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Browse animals
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <h5 class="pt-3 px-3">Vertebrates</h5>
+                </li>
+                <li><a class="dropdown-item" href="Animals.html">Amphibians</a></li>
+                <li><a class="dropdown-item" href="Animals.html">Reptiles</a></li>
+                <li><a class="dropdown-item" href="Animals.html">Mammals</a></li>
+                <li><a class="dropdown-item" href="Animals.html">Birds</a></li>
+                <li><a class="dropdown-item" href="Animals.html">Fishes</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <h5 class="pt-3 px-3">Invertebrates</h5>
+                </li>
+                <li><a class="dropdown-item" href="Animals.html">Annelida</a></li>
+                <li><a class="dropdown-item" href="Animals.html">Artropoda</a></li>
+                <li><a class="dropdown-item" href="Animals.html">Cnidaria</a></li>
+                <li><a class="dropdown-item" href="Animals.html">Echinodarmata</a></li>
+                <li><a class="dropdown-item" href="Animals.html">Mollusca</a></li>
+                <li><a class="dropdown-item" href="Animals.html">Nematoda</a></li>
+                <li><a class="dropdown-item" href="Animals.html">Platyhelminthes</a></li>
+                <li><a class="dropdown-item" href="Animals.html">Porifera</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact us</a>
+            </li>
+            <button class="btn btn-primary mx-md-4">Log in</button>
+          </ul>
+          <div class="container-fluid" id="search-container">
+            <div class="gcse-searchbox-only"></div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container" id="glass" style="margin-top: 7%;">
+    <div class="container my-5">
+      <h2>Contact us</h2>
+      <form
+      >
+        <label for="exampleFormControlInput1" class="form-label"
+          >Email address</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          id="email"
+          placeholder="name@example.com"
+          required
+        />
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Enter your message</label
+        >
+        <textarea
+        type="text"
+          class="form-control"
+          id="message"
+          name="message"
+          rows="5"
+          required
+        ></textarea>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start my-3">
+          <button type="submit" id="submit" class="btn btn-primary btn-lg px-4 me-md-2">
+            Submit
+          </button>
+          <button type="reset" class="btn btn-secondary btn-lg px-4"  style="margin-bottom:50px">
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="contact.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <script>
+      function onSuccess(googleUser) {
+        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        document.getElementById('image').style.visibility="visible";
+        document.getElementById('name').style.display="inline";
+        document.getElementById('name').style.color="white";
+        document.getElementById('name').innerText = googleUser.getBasicProfile().getName();
+        document.getElementById('image').src=googleUser.getBasicProfile().getImageUrl();
+        document.getElementById('my-signin2').style.display="none";
+        document.getElementById('email').value= googleUser.getBasicProfile().getEmail();  
+      }
+      function onFailure(error) {
+        console.log(error);
+        document.getElementById('my-signin2').style.display="none";
+        document.getElementById('image').style.display="none";
+        document.getElementById('name').style.display="none";
+      }
+      function renderButton() {
+        gapi.signin2.render('my-signin2', {
+          'scope': 'profile email',
+          'width': 240,
+          'height': 50,
+          'longtitle': true,
+          'theme': 'dark',
+          'onsuccess': onSuccess,
+          'onfailure': onFailure
+        });
+      }
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
