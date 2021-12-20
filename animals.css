@@ -1,0 +1,102 @@
+.accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-size: 20px;
+  }
+  
+  .active-side, .accordion:hover {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  }
+  nav{
+    position: fixed;
+    top:0
+  }
+  .panel {
+    padding: 5px 18px;
+    display: none;
+    background-color:rgb(247, 252, 255);
+    overflow: hidden;
+    font-size: 18px;
+  }
+  .sidenav{
+      /* background-color:rgb(247, 252, 255); */
+      width: 20%;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      z-index: 99;
+  }
+  .panel li{
+      list-style-type: none;
+  }
+  .panel a{
+      text-decoration: none;
+      color: black;
+      display: block;
+      padding-top: 15px;
+  }
+  #Vertebrates h2{
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+  }
+  #Vertebrates{
+    margin-left: 8%;
+  }
+  #topbar{
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgb(199, 225, 250) ;
+  }
+  #Invertebrates{
+    margin-left: 8%;
+  }
+  #Invertebrates h2{
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #7fda1e;
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 50%;
+    background-image: url('Images/up.png');
+    background-size: 100%;
+  }
+  
+  #myBtn:hover {
+    background-color: #a2df61;
+  }
+  @media only screen and (max-width: 800px) {
+    #topbar{
+        display: block;
+    }
+    .sidenav{
+        display: none;
+    }
+    #Vertebrates{
+      margin-left: 0;
+    }
+    #Invertebrates{
+      margin-left: 0;
+    }
+  }
