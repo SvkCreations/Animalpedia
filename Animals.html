@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#db5945" />
+  <meta name="google-signin-client_id"
+    content="956597175192-jl4iiuqvtitq3pocbv2f56ddco7oadh7.apps.googleusercontent.com" />
+  <script async src="https://cse.google.com/cse.js?cx=42d5629412f74541b"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="Images/icon-01.png" type="image/x-icon" />
+  <link rel="stylesheet" href="animals.css" />
+  <title>Animalpedia | Animals</title>
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <symbol id="bootstrap" viewBox="0 0 118 94">
+      <title>Bootstrap</title>
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+      </path>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 16 16">
+      <path
+        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+      </path>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 16 16">
+      <path
+        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+      </path>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 16 16">
+      <path
+        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+      </path>
+    </symbol>
+  </svg>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Images/icon-02.png" alt="" width="28" height="24" />
+      </a>
+      <a class="navbar-brand" href="index.html">Animalpedia</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="Animals.html"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Browse animals
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <h5 class="pt-3 px-3">Vertebrates</h5>
+              </li>
+              <li><a class="dropdown-item" href="Animals.html#Amphibians">Amphibians</a></li>
+              <li><a class="dropdown-item" href="Animals.html#Reptiles">Reptiles</a></li>
+              <li><a class="dropdown-item" href="Animals.html#Mammals">Mammals</a></li>
+              <li><a class="dropdown-item" href="Animals.html#Birds">Birds</a></li>
+              <li><a class="dropdown-item" href="Animals.html#Fishes">Fishes</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <h5 class="pt-3 px-3">Invertebrates</h5>
+              </li>
+              <li><a class="dropdown-item" href="Animals.html#Annelida">Annelida</a></li>
+              <li><a class="dropdown-item" href="Animals.html#Arthropoda">Artropoda</a></li>
+              <li><a class="dropdown-item" href="Animals.html#Cnidaria">Cnidaria</a></li>
+              <li><a class="dropdown-item" href="Animals.html#Echinodarmata">Echinodarmata</a></li>
+              <li><a class="dropdown-item" href="Animals.html#Mollusca">Mollusca</a></li>
+              <li><a class="dropdown-item" href="Animals.html#Nematoda">Nematoda</a></li>
+              <li><a class="dropdown-item" href="Animals.html#Platyhelminthes">Platyhelminthes</a></li>
+              <li><a class="dropdown-item" href="Animals.html#Porifera">Porifera</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+          <button class="btn btn-primary mx-md-4">Log in</button>
+        </ul>
+        <div class="container-fluid" id="search-container">
+          <div class="gcse-searchbox-only"></div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <div class="sidenav">
+    <button class="accordion">Vertebrates</button>
+    <div class="panel">
+      <ul>
+        <li>
+          <a href="#Amphibians" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Amphibians</a>
+        </li>
+        <li>
+          <a href="#Reptiles" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Reptiles</a>
+        </li>
+        <li>
+          <a href="#Mammals" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Mammals</a>
+        </li>
+        <li>
+          <a href="#Birds" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Birds</a>
+        </li>
+        <li>
+          <a href="#Fishes" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Fishes</a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="accordion">Invertebrates</button>
+    <div class="panel">
+      <ul>
+        <li>
+          <a href="#Annelida" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Annelida</a>
+        </li>
+        <li>
+          <a href="#Arthropoda" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Artropoda</a>
+        </li>
+        <li>
+          <a href="#Cnidaria" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Cnidaria</a>
+        </li>
+        <li>
+          <a href="#Echinodarmata" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Echinodarmata</a>
+        </li>
+        <li>
+          <a href="#Mollusca" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Mollusca</a>
+        </li>
+        <li>
+          <a href="#Nematoda" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Nematoda</a>
+        </li>
+        <li>
+          <a href="#Platyhelminthes" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Platyhelminthes</a>
+        </li>
+        <li>
+          <a href="#Porifera" onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)">Porifera</a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="accordion">Other</button>
+    <div class="panel"></div>
+  </div>
+  <!-- For mobile devices -->
+  <div class="container-fluid" id="topbar">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#Vertebrates">Vertebrates</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Invertebrates">Invertebrates</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Other</a>
+      </li>
+    </ul>
+  </div>
+  <div id="Vertebrates" class="container-fluid">
+    <div class="container col-xxl-8 px-4 py-5">
+      <h2>Vertebrates</h2>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Verte2.jpg" class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Who are Vertebrates?</h1>
+          <p class="lead">
+            Vertebrate, also called Craniata, any animal of the subphylum
+            Vertebrata, the predominant subphylum of the phylum Chordata. They
+            have backbones, from which they derive their name. The vertebrates
+            are also characterized by a muscular system consisting primarily
+            of bilaterally paired masses and a central nervous system partly
+            enclosed within the backbone.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-4 py-lg-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Types of Vertebrates</h2>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-lg-5">
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Amphi.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Amphibians'">
+            <div class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Amphibians
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Reptiles.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Reptiles'">
+            <div class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Reptiles
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Mammals.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Mammals'">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Mammals
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Birds.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Birds'">
+            <div class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Birds
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Fishes.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Fishes'">
+            <div class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Fishes
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container col-xxl-8 px-4 py-5">
+      <h2 class="pb-2 border-bottom">Know about each type</h2>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Amphibians">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Amphi1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+          <img src="Images/Amphi2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Amphibians</h1>
+          <p class="lead">
+            Amphibians evolved from fully aquatic tetrapods—(which were
+            essentially “limbed fish”) who descended from lobe-finned
+            fish—sometime between the Early Devonian Period (which began 419
+            million years ago) to the Early Pennsylvanian Subperiod (which
+            began 323 million years ago). The name amphibian, derived from the
+            Greek amphibious meaning “living a double life,” reflects this
+            dual life strategy—though some species are permanent land
+            dwellers, while other species have a completely aquatic mode of
+            existence. There are three living groups of amphibians
+            (caecilians, salamanders, and anurans [frogs and toads]) that,
+            collectively, make up more than 7,300 amphibian species. One
+            similar tendency among amphibians has been the evolution of direct
+            development, in which the aquatic egg and free-swimming larval
+            stages are eliminated. Development occurs fully within the egg
+            capsule, and juveniles hatch as miniatures of the adult body form.
+            Most species of lungless salamanders (family Plethodontidae), the
+            largest salamander family, some caecilians, and many species of
+            anurans have direct development. In addition, numerous caecilians
+            and a few species of anurans and salamanders give birth to live
+            young. Frogs and toads display a wide variety of life histories.
+            Some deposit eggs on vegetation above streams or ponds; upon
+            hatching, the tadpoles drop into the water where they continue to
+            develop throughout their larval stage. Some species create foam
+            nests for their eggs in aquatic (watery), terrestrial
+            (land-based), or arboreal (tree-based) habitats; after hatching,
+            tadpoles usually develop in water. Other species deposit their
+            eggs on land and transport them to water, while marsupial frogs
+            are so called because they carry their eggs in a pouch on their
+            backs. A few species lack a pouch and the tadpoles are exposed on
+            the back; in some species, the female deposits her tadpoles in a
+            pond as soon as they emerge from eggs.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Reptiles">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Reptiles-1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+          <img src="Images/Reptiles-2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Reptiles</h1>
+          <p class="lead">
+            Reptiles are air-breathing vertebrates. They have internal
+            fertilization, amniotic development (in which the embryo develops
+            within a set of protective extra-embryonic membranes—the amnion,
+            chorion, and allantois), and epidermal scales covering part or all
+            of their body. The major groups of living reptiles—the turtles,
+            tuataras, lizards and snakes, and crocodiles account for over
+            8,700 species. Reptiles evolved from amphibians during the first
+            part of the Pennsylvanian subperiod (323 million to 299 million
+            years ago) and retained many amphibian structural characteristics.
+            While most reptiles feed on other organisms, a few are herbivorous
+            (e.g., tortoises). As cold-blooded animals, reptiles tend to be
+            limited to temperate and tropical areas, but, where they occur,
+            they are relatively common; however, they are not as large or
+            conspicuous as birds and mammals. Most reptiles are terrestrial,
+            but a few are aquatic. They move about by creeping or swimming in
+            a fashion similar to amphibians. Some reptiles, however, can lift
+            the body from the ground and run rapidly either in a quadrupedal
+            or bipedal fashion. Reptiles lay relatively large, shelled eggs.
+            In a few instances, the eggs and young are cared for by the
+            female; in others, the young are born alive.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Mammals">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Mammals-1 (1).jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes"
+            width="700" height="500" loading="lazy" />
+          <img src="Images/Mammals-1 (2).jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Mammals</h1>
+          <p class="lead">
+            There are approximately 5,000 species of mammals living today.
+            Mammals differ from other vertebrate animals in that their young
+            are nourished with milk from special mammary glands of the mother.
+            Mammals are distinguished by several other unique features. Hair
+            is a typical mammalian feature, although in many whales it has
+            disappeared except in the fetal stage. The mammalian lower jaw is
+            hinged directly to the skull, instead of through a separate bone
+            (the quadrate) as in all other vertebrates. A chain of three tiny
+            bones transmits sound waves across the middle ear. A muscular
+            diaphragm separates the heart and the lungs from the abdominal
+            cavity. Mature red blood cells (erythrocytes) in all mammals lack
+            a nucleus; all other vertebrates have nucleated red blood cells.
+            The oldest known animals classified as mammals evolved near the
+            boundary of the Triassic and Jurassic Periods, some 200 million
+            years ago. This group of vertebrates ranges in size from tiny
+            shrews or small bats weighing only a few grams to the largest
+            known animals, the whales. Most mammals are terrestrial, feeding
+            on both animal and vegetable matter, but a few are partially
+            aquatic or entirely so, as in the case of the whales or porpoises.
+            Mammals move about in a great variety of ways: burrowing, bipedal
+            or tetrapedal (four-legged) running, flying, or swimming.
+            Reproduction usually involves the young developing inside the
+            uterus, where nutritive materials are made available through an
+            allantoic placenta or, in a few cases, a yolk sac. In placental
+            mammals, young have a longer developmental period within the
+            uterus. In marsupials, the relatively undeveloped young are
+            carried in a pouch, where they attach themselves to their mother’s
+            nipple until they become fully developed. Monotreme mammals (that
+            is, the platypus and echidna) differ from other mammals in that
+            they lay eggs which hatch.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Birds">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Birds-1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+          <img src="Images/Birds-2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Birds</h1>
+          <p class="lead">
+            Birds make up any of the 9,600 living species unique in having
+            feathers, the major characteristic that distinguishes them from
+            all other animals. They are warm-blooded vertebrates more related
+            to reptiles than to mammals. They have a four-chambered heart (as
+            do mammals), forelimbs modified into wings (a trait shared with
+            bats), a hard-shelled egg, and keen vision. Their sense of smell
+            is not highly developed, and their auditory range is limited.
+            Although most are capable of flight, others are sedentary, and
+            some are flightless. In a manner similar to their relatively close
+            relatives the reptiles, birds lay shelled eggs. The young are
+            usually cared for in a nest until they are capable of flight and
+            self-feeding, but some birds hatch in a well-developed state that
+            allows them to begin feeding immediately or even take flight.
+            (Nesting activities similar to those of some birds are seen in the
+            crocodilians.) The origin of birds, feathers, and avian flight
+            have long been hotly debated; the evolution of birds from
+            reptilian ancestors is universally accepted, however. The
+            diversity of theropod dinosaurs (a diverse group of carnivorous
+            “lizard-hipped” dinosaurs), some with feathers, has greatly
+            expanded our perspective of the evolution and early
+            diversification of birds. While it is known that the critical
+            period in avian evolution and flight took place during the Early
+            Cretaceous (145.5 million to 99.6 million years ago), there is
+            evidence that feathers on theropods emerged much earlier, possibly
+            during the Triassic and Jurassic Periods (some 252 million to 145
+            million years ago)
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Fishes">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Fish-1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+          <img src="Images/Fish-2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Fishes</h1>
+          <p class="lead">
+            The first fishes are thought to have emerged some 518 million
+            years ago during the Cambrian Period of Earth’s history. Today,
+            there more than 30,000 species of fishes found in the fresh and
+            salt waters of the world. Living species range from the primitive,
+            jawless lampreys and hagfishes through the cartilaginous sharks,
+            skates, and rays to the abundant and diverse bony fishes. Fishes
+            range in adult length from less than 10 mm (0.4 inch) to more than
+            20 meters (60 feet) and in weight from about 1.5 grams (less than
+            0.06 ounce) to many thousands of kilograms. Some live in shallow
+            thermal springs at temperatures slightly above 42 °C (100 °F),
+            others in cold Arctic seas a few degrees below 0 °C (32 °F) or in
+            cold deep waters more than 4,000 meters (13,100 feet) beneath the
+            ocean surface. Fish reproduction methods vary, but most fishes lay
+            a large number of small eggs that are fertilized and scattered
+            outside of the body. The eggs of pelagic (open ocean) fishes
+            usually remain suspended in the open water, while many shore and
+            freshwater fishes lay eggs on the bottom or among plants. The
+            mortality of the young and especially of the eggs is very high,
+            and often only a few individuals grow to maturity out of hundreds,
+            thousands, and in some cases millions of eggs laid.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="inv">
+  <div id="Invertebrates" class="container-fluid">
+    <div class="container col-xxl-8 px-4 py-5">
+      <h2>Invertebrates</h2>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Invertebrate.jpg" class="d-block mx-lg-auto img-fluid" width="700" height="500"
+            loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Who are Invertebrates?</h1>
+          <p class="lead">
+            Invertebrates are animals that neither possess nor develop a vertebral column (commonly known as a backbone
+            or spine), derived from the notochord. This includes all animals apart from the chordate subphylum
+            Vertebrata. Familiar examples of invertebrates include arthropods (insects, arachnids, crustaceans, and
+            myriapods), mollusks (chitons, snail, bivalves, squids, and octopuses), annelid (earthworms and leeches),
+            and cnidarians (hydras, jellyfishes, sea anemones, and corals)
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-4 py-lg-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Types of Invertebrates</h2>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-lg-5">
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Annelida.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Annelida'">
+            <div class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Annelida
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Arthropoda.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Arthropoda'">
+            <div class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Arthropoda
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Cnidaria.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Cnidaria'">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Cnidaria
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Echinodarmata.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Echinodarmata'">
+            <div class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Echinodarmata
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Mollusca.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Mollusca'">
+            <div class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Mollusca
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Nematoda.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Nematoda'">
+            <div class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Nematoda
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Platyhelminthes.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Platyhelminthes'">
+            <div class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Platyhelminthes
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              " style="
+                background-image: url('Images/Porifera.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+              " onclick="document.location='#Porifera'">
+            <div class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center">
+                Porifera
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container col-xxl-8 px-4 py-5">
+      <h2 class="pb-2 border-bottom">Know about each type</h2>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Annelida">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Annelida-1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+          <img src="Images/Annelida-2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Annelida</h1>
+          <p class="lead">
+            The Annelids are bilaterally symmetrical, triploblastic, coelomate, invertebrate organisms. They also have
+            parapodia for locomotion. Most textbooks still use the traditional division into polychaetes (almost all
+            marine), oligochaetes (which include earthworms) and leech-like species. Cladistic research since 1997 has
+            radically changed this scheme, viewing leeches as a sub-group of oligochaetes and oligochaetes as a
+            sub-group of polychaetes. In addition, the Pogonophora, Echiura and Sipuncula, previously regarded as
+            separate phyla, are now regarded as sub-groups of polychaetes. Annelids are considered members of the
+            Lophotrochozoa, a "super-phylum" of protostomes that also includes molluscs, brachiopods, and nemerteans.
+            The basic annelid form consists of multiple segments. Each segment has the same sets of organs and, in most
+            polychates, has a pair of parapodia that many species use for locomotion. Septa separate the segments of
+            many species, but are poorly defined or absent in others, and Echiura and Sipuncula show no obvious signs of
+            segmentation. In species with well-developed septa, the blood circulates entirely within blood vessels, and
+            the vessels in segments near the front ends of these species are often built up with muscles that act as
+            hearts. The septa of such species also enable them to change the shapes of individual segments, which
+            facilitates movement by peristalsis ("ripples" that pass along the body) or by undulations that improve the
+            effectiveness of the parapodia. In species with incomplete septa or none, the blood circulates through the
+            main body cavity without any kind of pump, and there is a wide range of locomotory techniques – according to
+            Rout Radhamohan some burrowing species turn their pharynges inside out to drag themselves through the
+            sediment.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Arthropoda">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Arthropoda-1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+          <img src="Images/Arthropoda-2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Arthropoda</h1>
+          <p class="lead">
+            Arthropods
+            are invertebrate animals having an exoskeleton, a segmented body, and paired jointed appendages. Arthropods
+            form the phylum Arthropoda. They are distinguished by their jointed limbs and cuticle made of chitin, often
+            mineralised with calcium carbonate. The arthropod body plan consists of segments, each with a pair of
+            appendages. Arthropods are bilaterally symmetrical and their body possesses an external skeleton. In order
+            to keep growing, they must go through stages of moulting, a process by which they shed their exoskeleton to
+            reveal a new one. Some species have wings. They are an extremely diverse group, with up to 10 million
+            species.
+
+            The haemocoel, an arthropod's internal cavity, accommodates its interior organs, and through which its
+            haemolymph – analogue of blood – circulates; it has an open circulatory system. Like their exteriors, the
+            internal organs of arthropods are generally built of repeated segments. Their nervous system is
+            "ladder-like", with paired ventral nerve cords running through all segments and forming paired ganglia in
+            each segment. Their heads are formed by fusion of varying numbers of segments, and their brains are formed
+            by fusion of the ganglia of these segments and encircle the esophagus. The respiratory and excretory systems
+            of arthropods vary, depending as much on their environment as on the subphylum to which they belong.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Cnidaria">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Cnidaria-1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes"
+            width="700" height="500" loading="lazy" />
+          <img src="Images/Cnidaria-2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Cnidaria</h1>
+          <p class="lead">
+            Cnidaria is a phylum under kingdom Animalia containing over 11,000 species of
+            aquatic animals found both in freshwater and marine environments, predominantly the latter.
+
+            Their distinguishing feature is cnidocytes, specialized cells that they use mainly for capturing prey. Their
+            bodies consist of mesoglea, a non-living jelly-like substance, sandwiched between two layers of epithelium
+            that are mostly one cell thick.
+
+            Cnidarians mostly have two basic body forms: swimming medusae and sessile polyps, both of which are radially
+            symmetrical with mouths surrounded by tentacles that bear cnidocytes. Both forms have a single orifice and
+            body cavity that are used for digestion and respiration. Many cnidarian species produce colonies that are
+            single organisms composed of medusa-like or polyp-like zooids, or both (hence they are trimorphic).
+            Cnidarians' activities are coordinated by a decentralized nerve net and simple receptors. Several
+            free-swimming species of Cubozoa and Scyphozoa possess balance-sensing statocysts, and some have simple
+            eyes. Not all cnidarians reproduce sexually, with many species having complex life cycles of asexual polyp
+            stages and sexual medusae. Some, however, omit either the polyp or the medusa stage, and the parasitic
+            classes evolved to have neither form
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Echinodarmata">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Echinodarmata-1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+          <img src="Images/Echinodarmata-2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Echinodarmata</h1>
+          <p class="lead">
+            An echinoderm is any member of the phylum Echinodermata
+            of marine animals. The adults
+            are recognizable by their (usually five-point) radial symmetry, and include starfish, sea urchins, sand
+            dollars, and sea cucumbers, as well as the sea lilies or "stone lilies". Adult echinoderms are found on
+            the sea bed at every ocean depth, from the intertidal zone to the abyssal zone. The phylum contains about
+            7000 living species, making it the second-largest grouping of deuterostomes (a superphylum), after the
+            chordates (which include the vertebrates, such as birds, fishes, mammals, and reptiles). Echinoderms are the
+            largest phylum that has no freshwater or terrestrial members.
+
+            Aside from the hard-to-classify Arkarua (a Precambrian animal with echinoderm-like pentamerous radial
+            symmetry), the first definitive members of the phylum appeared near the start of the Cambrian. One group of
+            Cambrian echinoderms, the cinctans (Homalozoa), which are close to the base of the echinoderm origin, has
+            been found to possess external gills used for filter feeding, similar to those possessed by chordates and
+            hemichordates.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Mollusca">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Mollusca-1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+          <img src="Images/Mollusca-2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Mollusca</h1>
+          <p class="lead">
+            Mollusca is the second-largest phylum of invertebrate animals after the Arthropoda. The members are known as
+            molluscs or mollusks. Around 85,000 extant species of molluscs are recognized. The number
+            of fossil species is estimated between 60,000 and 100,000 additional species. The proportion of
+            undescribed species is very high. Many taxa remain poorly studied.
+
+            Molluscs are the largest marine phylum, comprising about 23% of all the named marine organisms. Numerous
+            molluscs also live in freshwater and terrestrial habitats. They are highly diverse, not just in size and
+            anatomical structure, but also in behaviour and habitat. The phylum is typically divided into 7 or 8
+            taxonomic classes, of which two are entirely extinct. Cephalopod molluscs, such as squid, cuttlefish, and
+            octopuses, are among the most neurologically advanced of all invertebrates—and either the giant squid or the
+            colossal squid is the largest known invertebrate species. The gastropods (snails and slugs) are by far the
+            most numerous molluscs and account for 80% of the total classified species.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Nematoda">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Nematoda-1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+          <img src="Images/Nematoda.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Nematoda</h1>
+          <p class="lead">
+            The nematodes or roundworms
+            constitute the phylum Nematoda (also called Nemathelminthes), with plant-parasitic nematodes also
+            known as eelworms. They are a diverse animal phylum inhabiting a broad range of environments.
+            Taxonomically, they are classified along with insects and other moulting animals in the clade Ecdysozoa, and
+            unlike flatworms, have tubular digestive systems with openings at both ends. Like tardigrades, they have a
+            reduced number of Hox genes, but as their sister phylum Nematomorpha has kept the ancestral protostome Hox
+            genotype, it shows that the reduction has occurred within the nematode phylum.
+
+            Nematode species can be difficult to distinguish from one another. Consequently, estimates of the number of
+            nematode species described to date vary by author and may change rapidly over time. A 2013 survey of animal
+            biodiversity published in the mega journal Zootaxa puts this figure at over 25,000. Estimates of the
+            total number of extant species are subject to even greater variation. A widely referenced article
+            published in 1993 estimated there may be over 1 million species of nematode. A subsequent publication
+            challenged this claim, estimating the figure to be at least 40,000 species.[10] Although the highest
+            estimates (up to 100 million species) have since been deprecated, estimates supported by rarefaction
+            curves, together with the use of DNA barcoding and the increasing acknowledgment of widespread
+            cryptic species among nematodes, have placed the figure closer to 1 million species.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Platyhelminthes">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Platyhelminthes-1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+          <img src="Images/Platyhelminthes-2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Platyhelminthes</h1>
+          <p class="lead">
+            The Platyhelminthes historically contain organisms grouped in three major clades, Acoelomorpha, Catenulida,
+            and Rhabditophora, which include the Neodermata (Figure 10.1). The Neodermata (Ehlers, 1985) comprises the
+            group of the parasitic Platyhelminthes: Monogenea (Monopisthocotylea and Polyopisthocotylea), Trematoda
+            (Aspidogastrea and Digenea), and Cestoda (Amphilinidea, Gyrocotylidea and Eucestoda) (Littelwood et al.,
+            1999). They are characterized by the presence of a neodermis (hence the name of this parasitic clade), which
+            is a specialized epidermis formed by a peripheral syncytium with cytoplasmic elongations. Monogenea are
+            normally ectoparasitic on aquatic vertebrates, such as fishes, whereas trematodes and cestodes are
+            exclusively endoparasitic, generally in vertebrates.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="Porifera">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/Porifera-1.jpg" class="d-block mx-lg-auto img-fluid mb-2" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+          <img src="Images/Porifera-2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Porifera</h1>
+          <p class="lead">
+            Porifera represent an important faunal group of most aquatic communities. Sponges are known to be aggressive
+            competitors for space and can overgrow and kill other benthic organisms. Important
+            density-mediated indirect effects arise when predators consume sponges because removal of superior space
+            competitors by spongivores benefits slower growing sessile organisms. As mentioned previously, sponges are
+            highly efficient filter feeders and are major consumers of the ultraplankton. In turn, sponges represent an
+            important food source for a variety of invertebrate and vertebrate predators. In freshwater habitats,
+            sponges are consumed by a number of insects. For example, certain caddisflies (Trichoptera: Leptoceridae)
+            (e.g., Ceraclea fulva) are obligate sponge feeders. Some turtles (e.g., Emydura subglobosa in Australia)
+            appear to feed almost exclusively on freshwater sponges. In marine habitats, sponges suffer significant
+            pressure from specialist and generalist predators. The Caribbean seastar Oreaster reticulatus and Hawksbill
+            turtle (Eretmochelys imbricata) are voracious sponge predators in seagrass and reef habitats. Only 11
+            species of fish (in a gut content survey of over 200 species) were found to consume sponges regularly.
+            However, several common species that occur in relatively high densities had diets that included over 75%
+            sponge material. Other organisms are known parasites of sponges and include, for example, the well-known
+            spongillaflies (Neuroptera: Sisyridae). The genera Climacia and Sisyra are the two most commonly found in
+            North America.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="container-fluid">
+    <footer
+      class="
+        d-flex
+        flex-wrap
+        justify-content-between
+        align-items-center
+        py-3
+        my-4
+        border-top
+      "
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="text-muted">© Svk Creations 2021</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.instagram.com/itzsvk/"
+            ><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a
+            class="text-muted"
+            href="https://www.facebook.com/profile.php?id=100006403426982"
+            ><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active-side");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <script src="animals.js"></script>
+</body>
+
+</html>
